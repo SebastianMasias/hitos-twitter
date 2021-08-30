@@ -1,0 +1,10 @@
+
+
+<%= form_with model: @tweet, class:"container my-4 shadow p-3 mb-5 bg-white rounded" do |f| %>
+    <%= f.label :content, "contenido del tweet", class:"h2"%>
+    <%= f.text_area :content, class:"form-control"%>
+    <br>
+    <%= f.label :image_url, "url de la imagen", class:"h2"%>
+    <%= f.text_field :image_url, class:"form-control"%>
+    <%= f.submit "Create" , class:"btn btn-outline-primary my-3"%>    
+<% end %> 
